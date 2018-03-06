@@ -9,7 +9,6 @@ var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
 
 gulp.task('sass', function() {
-  console.log("sass compiling");
   return gulp.src(path.join(assetsPath, 'sass/index.scss'))
       .pipe(plumber())
       .pipe(sass())

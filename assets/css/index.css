@@ -1,23 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik");
 body {
   background: #444; }
+
+p {
+  color: white;
+  font-size: 100%;
+  font-family: 'Rubik', sans-serif; }
 
 .container {
   text-align: center; }
 
-.my-works {
+.works {
+  display: inline-block;
+  width: 280px;
   border: none;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 8px;
   background: black;
-  color: white;
-  font-size: 100%; }
+  color: white; }
 
 .social-icon {
-  padding: 8px;
   border-radius: 8px;
-  background: black;
-  width: 5%;
-  height: 5%; }
+  background: #000;
+  padding: 8px;
+  margin: 8px;
+  width: 64px;
+  height: 64px;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease; }
+  .social-icon:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
 
-.social-icon-container {
-  margin: 8px; }
+.link {
+  text-decoration: none; }
+
+.me {
+  display: inline-block;
+  position: relative;
+  left: 0px;
+  top: 88px;
+  width: 64px;
+  height: 64px;
+  padding: 8px;
+  background: #000;
+  border-radius: 8px;
+  z-index: 1;
+  text-align: center;
+  vertical-align: middle; }
+
+.twitter {
+  position: relative;
+  right: -100px;
+  display: inline-block;
+  -webkit-animation: slide1 0.6s ease 0.4s forwards;
+          animation: slide1 0.6s ease 0.4s forwards; }
+
+.github {
+  display: inline-block;
+  -webkit-animation: slide2 0.6s ease 0.45s forwards;
+          animation: slide2 0.6s ease 0.45s forwards; }
+
+.instagram {
+  position: relative;
+  left: -100px;
+  display: inline-block;
+  -webkit-animation: slide3 0.6s ease 0.5s forwards;
+          animation: slide3 0.6s ease 0.5s forwards; }
+
+@-webkit-keyframes slide1 {
+  0% {
+    -webkit-transform: translateY(0px) translateX(0px);
+            transform: translateY(0px) translateX(0px);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(140px) translateX(-104px);
+            transform: translateY(140px) translateX(-104px); } }
+
+@keyframes slide1 {
+  0% {
+    -webkit-transform: translateY(0px) translateX(0px);
+            transform: translateY(0px) translateX(0px);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(140px) translateX(-104px);
+            transform: translateY(140px) translateX(-104px); } }
+
+@-webkit-keyframes slide2 {
+  0% {
+    -webkit-transform: translateY(0px) translateX(0px);
+            transform: translateY(0px) translateX(0px); }
+  100% {
+    -webkit-transform: translateY(140px) translateX(0px);
+            transform: translateY(140px) translateX(0px); } }
+
+@keyframes slide2 {
+  0% {
+    -webkit-transform: translateY(0px) translateX(0px);
+            transform: translateY(0px) translateX(0px); }
+  100% {
+    -webkit-transform: translateY(140px) translateX(0px);
+            transform: translateY(140px) translateX(0px); } }
+
+@-webkit-keyframes slide3 {
+  0% {
+    -webkit-transform: translateY(0px) translateX(0px);
+            transform: translateY(0px) translateX(0px); }
+  100% {
+    -webkit-transform: translateY(140px) translateX(104px);
+            transform: translateY(140px) translateX(104px); } }
+
+@keyframes slide3 {
+  0% {
+    -webkit-transform: translateY(0px) translateX(0px);
+            transform: translateY(0px) translateX(0px); }
+  100% {
+    -webkit-transform: translateY(140px) translateX(104px);
+            transform: translateY(140px) translateX(104px); } }
