@@ -1,10 +1,21 @@
 {
   "name": "kotako",
   "version": "1.0.0",
-  "description": "",
+  "description": "kotako web",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "takorras",
-  "license": "MIT"
+  "path": {
+    "assetsDir": "./assets"
+  },
+  "author": "kotako",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^3.1.0"
+  }
 }

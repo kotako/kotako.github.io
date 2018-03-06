@@ -1,0 +1,23 @@
+body {
+  background: #444; }
+
+.container {
+  text-align: center; }
+
+.my-works {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  font-size: 100%; }
+
+.social-icon {
+  padding: 8px;
+  border-radius: 8px;
+  background: black;
+  width: 5%;
+  height: 5%; }
+
+.social-icon-container {
+  margin: 8px; }
