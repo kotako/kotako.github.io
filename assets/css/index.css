@@ -50,9 +50,9 @@ body {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: #000;
-  -webkit-animation: spread-horizontal 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s forwards, spread-vertical 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
-          animation: spread-horizontal 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s forwards, spread-vertical 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards; }
+  background-color: black;
+  -webkit-animation: spread-horizontal 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s both, spread-vertical 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
+          animation: spread-horizontal 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s both, spread-vertical 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards; }
 
 .container {
   display: flex;
@@ -61,11 +61,11 @@ body {
   align-items: center; }
 
 .social-icon {
+  width: 64px;
+  height: 64px;
   border-radius: 8px;
   background: #40A8A1;
   padding: 8px;
-  width: 64px;
-  height: 64px;
   transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
   transition: transform 0.2s ease, -webkit-transform 0.2s ease; }
@@ -75,9 +75,9 @@ body {
 
 .links {
   list-style: none;
+  padding: 0px;
   margin-left: 16px;
-  margin-right: 16px;
-  padding: 0; }
+  margin-right: 16px; }
   @media screen and (min-width: 480px) {
     .links {
       margin-left: 64px;

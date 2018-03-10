@@ -1,17 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Racing+Sans+One");
 @import "spread";
 
-$primary-color: #40A8A1;
-$secondary-color: #000;
+$accent-color: #40A8A1;
 
 body {
   margin: 0;
-  background: $primary-color;
+  background: $accent-color;
   text-decoration: none;
 }
 
 .kotako {
-  color: $primary-color;
+  color: $accent-color;
   font-size: 7em;
   font-weight: 100;
   font-family: Racing Sans One, sans-serif;
@@ -21,7 +20,7 @@ body {
 }
 
 .spread {
-  @include spread($primary-color, $secondary-color);
+  @include spread();
 }
 
 .container {
@@ -32,11 +31,11 @@ body {
 }
 
 .social-icon {
-  border-radius: 8px;
-  background: $primary-color;
-  padding: 8px;
   width: 64px;
   height: 64px;
+  border-radius: 8px;
+  background: $accent-color;
+  padding: 8px;
   transition: transform 0.2s ease;
   &:hover {
     transform: scale(1.1);
@@ -45,9 +44,9 @@ body {
 
 .links {
   list-style: none;
+  padding: 0px;
   margin-left: 16px;
   margin-right: 16px;
-  padding: 0;
   @media screen and (min-width: 480px) {
     margin-left: 64px;
     margin-right: 64px;
