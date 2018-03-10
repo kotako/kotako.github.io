@@ -1,37 +1,40 @@
-@import "https://fonts.googleapis.com/css?family=Josefin+Sans";
+@import url("https://fonts.googleapis.com/css?family=Racing+Sans+One");
+@import "spread";
 
-$primary-color: #444;
-$accent-color: #000;
+$primary-color: #40A8A1;
+$secondary-color: #000;
 
 body {
+  margin: 0;
   background: $primary-color;
-  color: white;
-  font-size: 100%;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-a {
   text-decoration: none;
 }
 
-.container {
-  text-align: center;
+.kotako {
+  color: $primary-color;
+  font-size: 7em;
+  font-weight: 100;
+  font-family: Racing Sans One, sans-serif;
+  @media screen and (max-width: 480px) {
+    font-size: 5em;
+  }
 }
 
-.works {
-  display: inline-block;
-  width: 280px;
-  border: none;
-  border-radius: 8px;
-  padding: 8px;
-  background: black;
+.spread {
+  @include spread($primary-color, $secondary-color);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-icon {
   border-radius: 8px;
-  background: $accent-color;
+  background: $primary-color;
   padding: 8px;
-  margin: 8px;
   width: 64px;
   height: 64px;
   transition: transform 0.2s ease;
@@ -40,64 +43,32 @@ a {
   }
 }
 
-.me {
-  display: inline-block;
-  position: relative;
-  left: 0px;
-  top: 88px;
-  width: 64px;
-  height: 64px;
-  padding: 8px;
-  background: $accent-color;
-  border-radius: 8px;
-  z-index: 1;
-  text-align: center;
-  vertical-align: middle;
-  font-family: 'Josefin Sans';
+.links {
+  list-style: none;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 0;
+  @media screen and (min-width: 480px) {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+  @each $link in twitter, github, instagram {
+    .#{$link} {
+      display: inline-block;
+      opacity: 0;
+      margin: 8px;
+      animation: rise-up .5s ease 1s both;
+    }
+  }
 }
 
-.twitter {
-  position: relative;
-  right: -100px;
-  display: inline-block;
-  animation: slide1 0.6s ease 0.4s forwards;
-}
-
-.github {
-  display: inline-block;
-  animation: slide2 0.6s ease 0.45s forwards;
-}
-
-.instagram {
-  position: relative;
-  left: -100px;
-  display: inline-block;
-  animation: slide3 0.6s ease 0.5s forwards;
-}
-
-@keyframes slide1 {
+@keyframes rise-up {
   0% {
-    transform: translateY(0px) translateX(0px);
+    opacity: 0;
+    transform: translateY(30px);
   }
   100% {
-    transform: translateY(140px) translateX(-104px);
-  }
-}
-
-@keyframes slide2 {
-  0% {
-    transform: translateY(0px) translateX(0px);
-  }
-  100% {
-    transform: translateY(140px) translateX(0px);
-  }
-}
-
-@keyframes slide3 {
-  0% {
-    transform: translateY(0px) translateX(0px);
-  }
-  100% {
-    transform: translateY(140px) translateX(104px);
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

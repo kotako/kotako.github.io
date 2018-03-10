@@ -1,0 +1,24 @@
+$primary-color: white;
+$secondary-color: black;
+
+@mixin spread($primary-color: white, $secondary-color: black) {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: $secondary-color;
+  animation:
+   spread-horizontal .3s cubic-bezier(0.785, 0.135, 0.150, 0.860) 0s forwards,
+   spread-vertical .3s cubic-bezier(0.785, 0.135, 0.150, 0.860) .5s forwards;
+}
+
+@keyframes spread-horizontal {
+  0% { transform: scale(0, .003); }
+  100% { transform: scale(1, .003); }
+}
+
+@keyframes spread-vertical {
+  0% { transform: scaleY(.003); }
+  100% { transform: scaleY(1); }
+}
