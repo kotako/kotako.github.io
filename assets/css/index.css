@@ -32,11 +32,11 @@
 
 body {
   margin: 0;
-  background: #40A8A1;
+  background: #38aaa1;
   text-decoration: none; }
 
 .kotako {
-  color: #40A8A1;
+  color: #38aaa1;
   font-size: 7em;
   font-weight: 100;
   font-family: Racing Sans One, sans-serif; }
@@ -64,7 +64,7 @@ body {
   width: 64px;
   height: 64px;
   border-radius: 8px;
-  background: #40A8A1;
+  background: #38aaa1;
   padding: 8px;
   transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
