@@ -6,8 +6,8 @@
   height: 100%;
   background-color: $primary-color;
   animation:
-   spread-horizontal .3s cubic-bezier(0.785, 0.135, 0.150, 0.860) 0s both,
-   spread-vertical .3s cubic-bezier(0.785, 0.135, 0.150, 0.860) .5s forwards;
+   spread-horizontal .3s cubic-bezier(0.785, 0.135, 0.150, 0.860) .3s both,
+   spread-vertical .3s cubic-bezier(0.785, 0.135, 0.150, 0.860) .8s forwards;
 }
 
 @keyframes spread-horizontal {
