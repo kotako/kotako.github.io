@@ -4,27 +4,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kotako</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preload" href="assets/css/index.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="assets/ic_twitter.png" as="image">
+    <link rel="preload" href="assets/ic_github.png" as="image">
+    <link rel="preload" href="assets/ic_instagram.png" as="image">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Racing+Sans+One" crossorigin>
   </head>
   <body>
     <div class="container spread">
       <p class="kotako">Kotako</p>
       <ul class="links">
 
-        <li class="twitter">
-          <a class="link" href="https://twitter.com/kotako_rs" target="_blank">
+        <li class="social-link">
+          <a href="https://twitter.com/kotako_rs" target="_blank">
             <img class="social-icon" src="assets/ic_twitter.png" alt="Twitter">
           </a>
         </li>
 
-        <li class="github">
-          <a class="link" href="https://github.com/kotako" target="_blank">
+        <li class="social-link">
+          <a href="https://github.com/kotako" target="_blank">
             <img class="social-icon" src="assets/ic_github.png" alt="GitHub">
           </a>
         </li>
 
-        <li class="instagram">
-          <a class="link" href="https://www.instagram.com/kotakorras" target="_blank">
+        <li class="social-link">
+          <a href="https://www.instagram.com/kotakorras" target="_blank">
             <img class="social-icon" src="assets/ic_instagram.png" alt="Instagram">
           </a>
         </li>

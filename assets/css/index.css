@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Racing+Sans+One");
 @-webkit-keyframes spread-horizontal {
   0% {
     -webkit-transform: scale(0, 0.003);
@@ -6,6 +5,7 @@
   100% {
     -webkit-transform: scale(1, 0.003);
             transform: scale(1, 0.003); } }
+
 @keyframes spread-horizontal {
   0% {
     -webkit-transform: scale(0, 0.003);
@@ -39,7 +39,7 @@ body {
   color: #38aaa1;
   font-size: 7em;
   font-weight: 100;
-  font-family: Racing Sans One, sans-serif; }
+  font-family: 'Racing Sans One', sans-serif; }
   @media screen and (max-width: 480px) {
     .kotako {
       font-size: 5em; } }
@@ -82,19 +82,7 @@ body {
     .links {
       margin-left: 64px;
       margin-right: 64px; } }
-  .links .twitter {
-    display: inline-block;
-    opacity: 0;
-    margin: 8px;
-    -webkit-animation: rise-up .5s ease 1.3s both;
-            animation: rise-up .5s ease 1.3s both; }
-  .links .github {
-    display: inline-block;
-    opacity: 0;
-    margin: 8px;
-    -webkit-animation: rise-up .5s ease 1.3s both;
-            animation: rise-up .5s ease 1.3s both; }
-  .links .instagram {
+  .links .social-link {
     display: inline-block;
     opacity: 0;
     margin: 8px;
