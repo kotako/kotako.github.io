@@ -17,5 +17,5 @@ gulp.task('sass', function() {
 });
 
 gulp.task('default', function() {
-    gulp.watch(path.join(assetsPath, 'sass/**/*.scss'),['sass']);
+    gulp.watch(path.join(assetsPath, 'sass/**/*.scss'), gulp.series('sass'));
 });

@@ -74,6 +74,7 @@ body {
 
 .links {
   list-style: none;
+  text-align: center;
   padding: 0px;
   margin-left: 16px;
   margin-right: 16px; }
